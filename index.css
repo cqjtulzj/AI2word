@@ -56,29 +56,30 @@ code {
   animation: spin 1s linear infinite;
 }
 
+/* 基础样式 - 缩小行距 */
 .prose {
-  font-family: 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'Microsoft YaHei', 'SimHei', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 11pt !important;
   color: #374151 !important;
-  line-height: 1.5 !important;
+  line-height: 1.4 !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
   white-space: pre-wrap !important;
 }
 
+/* Removed aggressive reset - individual element styles below will handle margins/padding */
 .prose * {
-  margin: 0 !important;
-  padding: 0 !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
 }
 
+/* 标题样式 - 减小行距和间距 */
 .prose h1 {
   font-size: 16pt !important;
   font-weight: 700 !important;
   color: #2E74B5 !important;
-  margin-top: 20pt !important;
-  margin-bottom: 10pt !important;
+  margin-top: 12pt !important;
+  margin-bottom: 6pt !important;
   line-height: 1.2 !important;
   border-bottom: 1px solid #E5E7EB !important;
   padding-bottom: 4pt !important;
@@ -88,17 +89,17 @@ code {
   font-size: 14pt !important;
   font-weight: 700 !important;
   color: #1F4D78 !important;
-  margin-top: 15pt !important;
-  margin-bottom: 7.5pt !important;
-  line-height: 1.3 !important;
+  margin-top: 10pt !important;
+  margin-bottom: 5pt !important;
+  line-height: 1.25 !important;
 }
 
 .prose h3 {
   font-size: 12pt !important;
   font-weight: 700 !important;
   color: #428bca !important;
-  margin-top: 12pt !important;
-  margin-bottom: 6pt !important;
+  margin-top: 8pt !important;
+  margin-bottom: 4pt !important;
   line-height: 1.3 !important;
 }
 
@@ -106,26 +107,28 @@ code {
   font-size: 11pt !important;
   font-weight: 700 !important;
   color: #374151 !important;
-  margin-top: 10pt !important;
-  margin-bottom: 5pt !important;
+  margin-top: 6pt !important;
+  margin-bottom: 3pt !important;
   line-height: 1.3 !important;
 }
 
+/* 段落样式 - 缩小行距 */
 .prose p {
-  margin-top: 8pt !important;
-  margin-bottom: 8pt !important;
-  line-height: 1.5 !important;
+  margin-top: 4pt !important;
+  margin-bottom: 4pt !important;
+  line-height: 1.4 !important;
   text-align: left !important;
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
 }
 
+/* 表格样式 */
 .prose table {
   width: 100% !important;
   border-collapse: collapse !important;
-  margin-top: 12pt !important;
-  margin-bottom: 12pt !important;
+  margin-top: 6pt !important;
+  margin-bottom: 6pt !important;
   border-top: 1px solid #E5E7EB !important;
   border-bottom: 1px solid #E5E7EB !important;
   border-left: none !important;
@@ -138,9 +141,11 @@ code {
 }
 
 .prose th {
-  padding: 10pt 10pt !important;
+  padding: 3pt 5pt !important;
   text-align: left !important;
   font-weight: 700 !important;
+  font-size: 8pt !important;
+  line-height: 1.2 !important;
   color: #374151 !important;
   border-top: 1px solid #E5E7EB !important;
   border-bottom: 1px solid #E5E7EB !important;
@@ -153,13 +158,14 @@ code {
 }
 
 .prose td {
-  padding: 10pt 10pt !important;
+  padding: 3pt 5pt !important;
+  font-size: 8pt !important;
+  line-height: 1.2 !important;
   border-top: 1px solid #E5E7EB !important;
   border-bottom: 1px solid #E5E7EB !important;
   border-left: none !important;
   border-right: none !important;
   vertical-align: middle !important;
-  line-height: 1.5 !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
   white-space: pre-wrap !important;
@@ -173,45 +179,51 @@ code {
   background-color: transparent !important;
 }
 
+/* 列表样式 - 减小间距 */
 .prose ul {
-  margin-top: 5.33pt !important;
-  margin-bottom: 5.33pt !important;
-  padding-left: 20pt !important;
+  margin-top: 3pt !important;
+  margin-bottom: 3pt !important;
+  padding-left: 16pt !important;
   list-style-type: disc !important;
 }
 
 .prose ol {
-  margin-top: 5.33pt !important;
-  margin-bottom: 5.33pt !important;
-  padding-left: 20pt !important;
+  margin-top: 3pt !important;
+  margin-bottom: 3pt !important;
+  padding-left: 16pt !important;
   list-style-type: decimal !important;
 }
 
 .prose li {
-  margin-top: 4pt !important;
-  margin-bottom: 4pt !important;
-  line-height: 1.5 !important;
+  margin-top: 2pt !important;
+  margin-bottom: 2pt !important;
+  line-height: 1.4 !important;
 }
 
+/* 代码样式 */
 .prose code {
   font-family: 'Courier New', monospace !important;
-  background-color: transparent !important;
-  padding: 2pt 4pt !important;
+  background-color: #f3f4f6 !important;
+  padding: 1pt 3pt !important;
   border-radius: 2pt !important;
   font-size: 10pt !important;
+  color: #ef4444 !important;
 }
 
 .prose pre {
-  background-color: transparent !important;
-  padding: 10pt !important;
+  background-color: #f5f5f5 !important;
+  color: #374151 !important;
+  padding: 8pt !important;
   border-radius: 4pt !important;
   overflow-x: auto !important;
-  margin-top: 6pt !important;
-  margin-bottom: 6pt !important;
+  margin-top: 4pt !important;
+  margin-bottom: 4pt !important;
+  border: 1px solid #e5e7eb !important;
 }
 
 .prose pre code {
   background-color: transparent !important;
+  color: #374151 !important;
   padding: 0 !important;
   font-size: 10pt !important;
   font-family: 'Courier New', monospace !important;
@@ -228,15 +240,15 @@ code {
 .prose hr {
   border: none !important;
   border-bottom: 1px solid #E5E7EB !important;
-  margin-top: 10pt !important;
-  margin-bottom: 10pt !important;
+  margin-top: 6pt !important;
+  margin-bottom: 6pt !important;
 }
 
 .prose blockquote {
   border-left: 3pt solid #E5E7EB !important;
-  padding-left: 10pt !important;
-  margin-top: 6pt !important;
-  margin-bottom: 6pt !important;
+  padding-left: 8pt !important;
+  margin-top: 4pt !important;
+  margin-bottom: 4pt !important;
   color: #64748b !important;
 }
 
@@ -248,3 +260,38 @@ code {
 .prose del {
   text-decoration: line-through !important;
 }
+
+/* Mermaid 图表样式 */
+.prose .mermaid,
+.prose .mermaid-rendered {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 8pt 0 !important;
+  background-color: transparent !important;
+  padding: 8pt !important;
+}
+
+.prose .mermaid svg,
+.prose .mermaid-rendered svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* KaTeX 公式样式 */
+.prose .katex {
+  font-size: 1em !important;
+  font-family: 'KaTeX_Main', 'Times New Roman', serif !important;
+}
+
+.prose .katex-display {
+  margin: 6pt 0 !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+.prose .katex-display .katex {
+  font-size: 1.1em !important;
+}
+
+/* Note: Duplicate Tailwind Typography styles removed - using the first set with !important above */
